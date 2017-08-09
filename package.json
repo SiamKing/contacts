@@ -2,7 +2,7 @@
   "name": "contacts",
   "version": "1.0.0",
   "description": "Angular practice with contacts",
-  "main": "index.js",
+  "main": "js/app/app.js",
   "scripts": {
     "live": "live-server",
     "start": "npm run live"

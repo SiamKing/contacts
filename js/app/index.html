@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>contacts</title>
+  </head>
+  <body>
+    <div ng-app="contacts" class="app">
+      <div ng-controller="ContactsController as vm">
+        <ul>
+          <div ng-repeat="contact in vm.contacts">
+            <li>
+              <h4>Name: {{ contact.name }}</h4>
+              <h6>Phone: {{ contact.phone }}</h6>
+              <a href="#" ng-click="vm.removeContact($index)">Delete</a>
+            </li>
+          </div>
+        </ul>
+        <h2>Add Contact</h2>
+        <form class="" action="index.html" method="post">
+          <div>
+            <label>Name</label>
+            <input ng-model="vm.name"/>
+          </div>
+          <div>
+            <label>Phone</label>
+            <input ng-model="vm.PhoneNumber"/>
+          </div>
+          <button ng-click="vm.addContact(vm.name, vm.phoneNumber)" type="button" name="button">Add Contact</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
